@@ -98,14 +98,15 @@
 }
 
 .switch-button {
-  background: transparent;
+  background: rgba(200, 155, 43, 0.08);
   color: var(--text-main);
   display: flex;
   align-items: center;
   gap: 0.9rem;
   padding: 0.6rem 1rem;
   border-radius: 999px;
-  border: 1px solid rgba(200, 155, 43, 0.4);
+  border: 1px solid rgba(200, 155, 43, 0.5);
+  box-shadow: 0 10px 25px rgba(200, 155, 43, 0.12);
 }
 
 .switch-button:disabled {
@@ -117,24 +118,25 @@
   width: 70px;
   height: 34px;
   border-radius: 999px;
-  background: linear-gradient(135deg, #4f401f, #2a2212);
+  background: linear-gradient(135deg, #d2a93a, #8d5f12);
   display: inline-flex;
   align-items: center;
   padding: 4px;
   position: relative;
+  box-shadow: inset 0 0 6px rgba(255, 235, 170, 0.6);
 }
 
 .switch-thumb {
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  background: radial-gradient(circle at 30% 30%, #ffe09d, #c89b2b);
+  background: radial-gradient(circle at 30% 30%, #fff3c7, #c89b2b);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   transform: translateX(0);
   transition: transform 0.3s ease;
 }
 
-.switch-button:hover .switch-thumb {
+.switch-button.pressed .switch-thumb {
   transform: translateX(28px);
 }
 
