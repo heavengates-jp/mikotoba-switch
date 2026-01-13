@@ -9,7 +9,7 @@
   --accent: #f3d889;
   --danger: #d66a4d;
   --shadow: rgba(0, 0, 0, 0.35);
-  font-family: "Noto Serif JP", "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-family: "M PLUS Rounded 1c", "Hiragino Maru Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
   line-height: 1.6;
   font-weight: 500;
   color: var(--text-main);
