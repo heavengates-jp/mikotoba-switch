@@ -11,6 +11,8 @@ import { pickRandomVerse, upsertHistory } from './utils/random'
 import { loadFromStorage, saveToStorage, STORAGE_KEYS } from './utils/localStore'
 import './App.css'
 
+const APP_VERSION = 'Ver.00a'
+
 const defaultSettings = {
   fontSize: 'medium',
 }
@@ -120,6 +122,7 @@ export default function App() {
   return (
     <HashRouter>
       <div className={`app font-${settings.fontSize || 'medium'}`}>
+        <div className="version-badge">{APP_VERSION}</div>
         <Routes>
           <Route
             path="/"
