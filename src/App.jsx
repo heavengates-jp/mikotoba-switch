@@ -11,7 +11,7 @@ import { pickRandomVerse, upsertHistory } from './utils/random'
 import { loadFromStorage, saveToStorage, STORAGE_KEYS } from './utils/localStore'
 import './App.css'
 
-const APP_VERSION = 'Ver.00e'
+const APP_VERSION = 'Ver.00f'
 
 const defaultSettings = {
   fontSize: 'medium',

@@ -1,4 +1,5 @@
-﻿import { useMemo, useState } from 'react'
+import { useMemo, useState } from 'react'
+import { Link } from 'react-router-dom'
 import VerseCard from '../components/VerseCard'
 
 export default function History({ history, onClear, onSelect }) {
@@ -17,9 +18,12 @@ export default function History({ history, onClear, onSelect }) {
     <div className="page">
       <header className="page-header">
         <h2>履歴</h2>
-        <button type="button" className="danger-button" onClick={onClear}>
-          履歴を消す
-        </button>
+        <div className="form-row">
+          <Link to="/" className="ghost-button">ホームへ戻る</Link>
+          <button type="button" className="danger-button" onClick={onClear}>
+            履歴を消す
+          </button>
+        </div>
       </header>
 
       <section className="card-section">

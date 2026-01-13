@@ -1,4 +1,5 @@
-﻿import VerseCard from '../components/VerseCard'
+import { Link } from 'react-router-dom'
+import VerseCard from '../components/VerseCard'
 
 export default function Favorites({ favorites, onRemove }) {
   const first = favorites[0] || null
@@ -7,6 +8,7 @@ export default function Favorites({ favorites, onRemove }) {
     <div className="page">
       <header className="page-header">
         <h2>お気に入り</h2>
+        <Link to="/" className="ghost-button">ホームへ戻る</Link>
       </header>
 
       <section className="card-section">
