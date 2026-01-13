@@ -63,7 +63,7 @@ export default function Admin({ user, isAdmin, verses }) {
     event.preventDefault()
     setStatus('')
     if (!form.reference || !form.text) {
-      setStatus('reference と text を入力してください。')
+      setStatus('聖書箇所 と みことば を入力してください。')
       return
     }
     await createVerse({
@@ -190,7 +190,7 @@ export default function Admin({ user, isAdmin, verses }) {
         <h3>検索</h3>
         <input
           type="text"
-          placeholder="reference / text / tag"
+          placeholder="聖書箇所 / みことば / tag"
           value={search}
           onChange={(event) => setSearch(event.target.value)}
         />
@@ -240,7 +240,7 @@ export default function Admin({ user, isAdmin, verses }) {
           <h3>編集</h3>
           <form className="form" onSubmit={handleUpdate}>
             <label>
-              reference
+              聖書箇所
               <input
                 type="text"
                 value={editing.reference}
@@ -251,7 +251,7 @@ export default function Admin({ user, isAdmin, verses }) {
               />
             </label>
             <label>
-              text
+              みことば
               <textarea
                 value={editing.text}
                 onChange={(event) =>
@@ -301,7 +301,7 @@ export default function Admin({ user, isAdmin, verses }) {
         <h3>単発登録</h3>
         <form className="form" onSubmit={handleCreate}>
           <label>
-            reference
+            聖書箇所
             <input
               type="text"
               value={form.reference}
@@ -312,7 +312,7 @@ export default function Admin({ user, isAdmin, verses }) {
             />
           </label>
           <label>
-            text
+            みことば
             <textarea
               value={form.text}
               onChange={(event) =>
