@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+﻿import { useEffect, useRef, useState } from 'react'
 
 export default function SwitchButton({ onClick, disabled }) {
   const [pressed, setPressed] = useState(false)
@@ -27,7 +27,7 @@ export default function SwitchButton({ onClick, disabled }) {
       <span className="switch-track">
         <span className="switch-thumb" />
       </span>
-      <span className="switch-label">���݂̂��Ƃ΂�</span>
+      <span className="switch-label">つぎのみことばへ</span>
     </button>
   )
 }
