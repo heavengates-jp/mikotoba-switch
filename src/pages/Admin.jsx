@@ -122,6 +122,7 @@ export default function Admin({ user, isAdmin, verses }) {
         <header className="page-header">
           <h2>管理者ログイン</h2>
         </header>
+        <Link to="/" className="ghost-button">ホームへ戻る</Link>
         <form className="form" onSubmit={handleLogin}>
           <label>
             Email
@@ -156,6 +157,7 @@ export default function Admin({ user, isAdmin, verses }) {
         <header className="page-header">
           <h2>管理画面</h2>
         </header>
+        <Link to="/" className="ghost-button">ホームへ戻る</Link>
         <p className="status-text">管理者権限がありません。</p>
         <button type="button" className="ghost-button" onClick={handleLogout}>
           ログアウト
@@ -171,9 +173,12 @@ export default function Admin({ user, isAdmin, verses }) {
           <h2>管理画面</h2>
           <p className="small-text">ログイン中: {user.email}</p>
         </div>
-        <button type="button" className="ghost-button" onClick={handleLogout}>
-          ログアウト
-        </button>
+        <div className="form-row">
+          <Link to="/" className="ghost-button">ホームへ戻る</Link>
+          <button type="button" className="ghost-button" onClick={handleLogout}>
+            ?????
+          </button>
+        </div>
       </header>
 
       {verses.length === 0 ? (
@@ -399,3 +404,4 @@ export default function Admin({ user, isAdmin, verses }) {
     </div>
   )
 }
+
