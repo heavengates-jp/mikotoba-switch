@@ -62,6 +62,8 @@ service cloud.firestore {
 
 ### 4) 管理者ドキュメント作成
 管理者として許可するUIDのドキュメントを `admins` コレクションに追加します。
+- 管理者メール: `heavengates.dx@gmail.com`
+- 管理者UID: `LxXKGwkD1EOQdX4gpUS9u2Da8E62`
 - コレクション: `admins`
 - ドキュメントID: `LxXKGwkD1EOQdX4gpUS9u2Da8E62`
 - フィールド: なしでOK
